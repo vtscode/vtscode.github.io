@@ -94,7 +94,7 @@ export default function Home() {
                   title={dataRepos.name}
                   description={dataRepos.description}
                   repoHref={dataRepos.url}
-                  demoHref={dataRepos.homepage || 'https://vtscode.github.io'}
+                  demoHref={dataRepos.homepage}
                   languageColor="#2b7489"
                   language={dataRepos.language}
                   starCount={dataRepos.stars} stargazersUrl={""}
