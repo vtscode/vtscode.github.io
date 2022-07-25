@@ -20,7 +20,9 @@ export default function Home() {
   const { data, error } = useSWR('/api/github', fetcher)
 
   useEffect(() => {
-    setreposData(data.repos)
+    if(data){
+      setreposData(data.repos)
+    }
   },[data])
 
 
